@@ -16,8 +16,14 @@ func New(c *Config, logger *zap.Logger) *Server {
 	}
 }
 
-// Run the server
+// Run server/service
 func (s *Server) Run() {
 
-	s.log.Info("Starting Server...")
+	s.log.Info("Starting CLI Service...")
+	StartRemoteCli(s.log)
+
+	s.log.Info("Starting Server Runner...")
+	for {
+		//run
+	}
 }

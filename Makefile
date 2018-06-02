@@ -10,6 +10,7 @@ default: help
 build: ## Build binaries for current host
 	mkdir -p $(BUILD_DIR)
 	go build $(LDFLAGS) -o $(BUILD_DIR)/server ./cmd/server
+	go build $(LDFLAGS) -o $(BUILD_DIR)/client ./cmd/client
 
 .PHONY: clean 
 clean: ## Clean files generated on build
