@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/chespinoza/test-kingpin/server"
+	"github.com/chespinoza/go-skeleton-kingpin/server"
 	"go.uber.org/zap"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )
